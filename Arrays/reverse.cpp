@@ -38,5 +38,5 @@ int main()
     {
         cout<<arr[i]<<endl;/* code */
     }
-    
+    return 0;
 }
