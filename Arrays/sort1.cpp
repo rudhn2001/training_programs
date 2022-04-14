@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int swap1(int a,int b)
-{
-    int temp;
-    temp=a;
-    a=b;
-    b=temp;
-    return a,b;
-}
+// int swap1(int a,int b)
+// {
+//     int temp;
+//     temp=a;
+//     a=b;
+//     b=temp;
+//     return a,b;
+// }
 int main() 
 {
-    int n,a;
+    int n,a,temp;
     int arr[20];
     int mid=0,high=0,low=0;
     cout<<endl<<"Enter the number of elements : ";
@@ -40,23 +40,31 @@ int main()
     mid=0;
     while (mid<=high)
     {
-        if (arr[mid]==0)
-        {
-            swap1(arr[low],arr[mid]);
+        switch (arr[mid])
+        { 
+        case 0:
+        
+            temp=arr[low];
+            arr[low]=arr[mid];
+            arr[mid]=temp;
+
             mid++;
             low++;
             /* code */
-        }
-        if (arr[mid]==1)
-        {
+        break;
+        case 1:
+        
             mid++;
             /* code */
-        }
-        if (arr[mid]==2)
-        {
-            swap1(arr[mid],arr[high]);
+        break;
+        case 2:
+        
+            temp=arr[low];
+            arr[low]=arr[mid];
+            arr[mid]=temp;
             high--;
             /* code */
+        break;
         }
     }
     cout<<"Sorted array is : "<<endl;
