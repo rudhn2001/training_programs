@@ -16,7 +16,7 @@ int main()
     int mid=0,high=0,low=0;
     cout<<endl<<"Enter the number of elements : ";
     cin>>n;
-    cout<<"Enter the array elements(only 0,1 and 2) : ";
+    cout<<"Enter the array elements(only 0, 1 and 2) : ";
     for (int i = 0; i < n; i++)
     {
         cin>>a;
@@ -58,16 +58,13 @@ int main()
             high--;
             /* code */
         }
+    }
     cout<<"Sorted array is : "<<endl;
         for (int i = 0; i < n; i++)
         {
             cout<<arr[i]<<endl;
             /* code */
         }
-        
-        
-        /* code */
-    }
         
     return 0;
 
