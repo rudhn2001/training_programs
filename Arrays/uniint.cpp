@@ -57,22 +57,20 @@ int main()
             else {
                 flag=1;
             }
-            if(flag==0){
-                arr4[n4]=arr4[i];
-                n3++;
-            }
-         /* code */
         }
-        /* code */
+         if(flag==0){
+                arr4[n4]=arr1[i];
+                n4++;
+            }
     }    
     for (int i = 0; i <n2 ; i++)
         {
-            arr4[n3]=arr2[i];
-            n3++;
+            arr4[n4]=arr2[i];
+            n4++;
             /* code */
         }
     cout<<"Union : "<<endl;
-    for(int i=0;i<n3;i++){
+    for(int i=0;i<n4;i++){
         cout<<arr4[i]<<endl;
     }
    
